@@ -1,0 +1,160 @@
+* {
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+
+body {
+    background-color: beige;
+}
+
+#logo {
+    height: 30px;
+    width: 30px;
+}
+
+.header {
+    display: flex;
+    font-size: 10px;
+    color: black;
+    font-weight: 900;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Source Code Pro', monospace;
+    padding-right: 5px;
+    margin: 10px 10px;
+    position: relative;
+    left: -16vw;
+    top: -8px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(198, 58, 28);
+    flex-wrap: nowrap;
+    margin: 10px auto;
+    padding: 20px 40px;
+    height: 91vh;
+    width: 35vw;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 30px;
+}
+
+textarea {
+    overflow-y: hidden;
+    border-radius: 10px;
+    padding: 10px 10px;
+    font-size: 13px;
+}
+
+.footer {
+    display: flex;
+    font-size: 30px;
+    margin: 10px 10px;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+.chatarea {
+    height: 80vh;
+    width: 40vw;
+    border: 2px solid black;
+    background: url('chatareabg.png');
+    background-color: black;
+    overflow-y: auto;
+}
+
+.message {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 400px;
+    border: 2px solid black;
+    background-color: rgb(244, 244, 198);
+    clear: both;
+    margin: 10px 5px;
+    padding: 5px 5px;
+    border-radius: 10px;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 1.1rem;
+    box-sizing: border-box;
+    text-align: left;
+    overflow: auto;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+.center {
+    margin: 2px auto;
+    max-width: fit-content;
+    padding: 2px 5px;
+    font-weight: bold;
+    font-family: 'Pacifico', cursive;
+    background-color: white;
+}
+
+#sendicon {
+    font-size: 48px;
+    color: white;
+    /* position: relative;
+    top: 10px;
+    left: 4px; */
+}
+
+#sndbtn:hover {
+    background-color: black;
+}
+
+#sndbtn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.inputarea {
+    width: 33vw;
+    overflow-y: hidden;
+    border-radius: 10px;
+    padding: 10px 10px;
+    font-size: 15px;
+    margin: 10px 10px;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+@media screen and (max-width: 720px) {
+    .inputarea {
+        resize: none;
+        white-space: nowrap;
+        overflow-x: auto;
+        overflow-y: auto;
+        margin-left: 5px;
+        width: 230px;
+    }
+
+    body {
+        background-color: lightgreen;
+    }
+
+    .container {
+        width: 70%;
+    }
+
+    .chatarea {
+        width: 80vw;
+    }
+
+    .header {
+        position: relative;
+        left: -90px;
+    }
+}
