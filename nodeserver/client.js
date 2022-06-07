@@ -2,7 +2,7 @@ const socket = io("http://localhost:8000");
 const form = document.getElementById('send-container');
 const messageInput = document.getElementById('messageInput');
 const messageContainer = document.querySelector(".chatarea");
-const myname = prompt("Enter your myname to join!");
+const myname = prompt("Enter your Name to join!");
 // {
 //     if (myname == null) {
 //         while (myname == null) {
